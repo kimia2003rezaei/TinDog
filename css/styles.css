@@ -17,9 +17,6 @@ h2 {
     font-size: 2.5rem;
     font-weight: bold;
 }
-#video, #form {
-    display: none;
-}
 #title {
     background-color: #ff4c68;
     color: white;
@@ -27,14 +24,6 @@ h2 {
 .container-fluid {
     padding: 3% 15% 7%;
 
-}
-#nav-bar.fixed-top {
-    background-color: #ff4c68;
-    padding: 2.5% 3%;
-    height: 7%;
-}
-.navbar-collapse {
-    background-color: #ff4c68;
 }
 .nav-item {
     padding: 0 10px;
@@ -182,16 +171,7 @@ img {
     #title {
         text-align: center;
     }
-    #nav-bar.fixed-top {
-        height: 13%;
-        padding-bottom: 8%;
-    }
 
-}
-@media (max-width: 600px) {
-    body {
-        padding-top: 11%;
-    }
 }
 @media (max-width: 500px) {
     .footer-title, h1 {
@@ -229,8 +209,5 @@ img {
     }
     .testimonial-text {
         font-size: 1.5rem;
-    }
-    body {
-        padding-top: 22%;
     }
 }
