@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     position: relative;
+    padding-top: 5%;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
@@ -16,6 +17,9 @@ h2 {
     font-size: 2.5rem;
     font-weight: bold;
 }
+#video, #form {
+    display: none;
+}
 #title {
     background-color: #ff4c68;
     color: white;
@@ -23,6 +27,14 @@ h2 {
 .container-fluid {
     padding: 3% 15% 7%;
 
+}
+#nav-bar.fixed-top {
+    background-color: #ff4c68;
+    padding: 2.5% 3%;
+    height: 7%;
+}
+.navbar-collapse {
+    background-color: #ff4c68;
 }
 .nav-item {
     padding: 0 10px;
@@ -50,10 +62,18 @@ h2 {
     margin: 5% 3% 5% 0;
 }
 
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    display: none;
+}
+
 #features {
     position: relative;
     background-color: white;
-    padding: 7% 15%;
+    padding: 15% 15%;
 }
 .feature-item {
     text-align: center;
@@ -125,10 +145,6 @@ img {
 .pricing-col {
     padding: 2% 3%;
 }
-.card-body p {
-    color: #8f8f8f;
-}
-
 .price-text {
     font-weight: normal;
     font-size: 2rem;
@@ -136,18 +152,11 @@ img {
 .pricing-header {
     font-size: 2.5rem;
 }
-
-@media (max-width: 1028px) {
-    .title-img {
-        position: static;
-        transform: rotate(0);
-    }
-    .header {
-        padding-right: 15px;
-    }
-    #title {
-        text-align: center;
-    }
+.card-body p {
+    color: #8f8f8f;
+}
+.card-body p.card-filler {
+    color: white;
 }
 #cta {
     background-color: #ff4c68;
@@ -161,4 +170,67 @@ img {
 }
 .footer-icon {
     padding: 1%;
+}
+@media (max-width: 1028px) {
+    .title-img {
+        position: static;
+        transform: rotate(0);
+    }
+    .header {
+        padding-right: 15px;
+    }
+    #title {
+        text-align: center;
+    }
+    #nav-bar.fixed-top {
+        height: 13%;
+        padding-bottom: 8%;
+    }
+
+}
+@media (max-width: 600px) {
+    body {
+        padding-top: 11%;
+    }
+}
+@media (max-width: 500px) {
+    .footer-title, h1 {
+        font-size: 2.8rem;
+    }
+    .testimonial-text {
+        font-size: 1.8rem;
+    }
+    .pricing-header {
+        font-size: 1.9rem;
+    }
+}
+@media (max-width: 400px) {
+    .footer-title, h1 {
+        font-size: 2.5rem;
+    }
+    .navbar-brand {
+        font-size: 1.6rem;
+    }
+    body {
+        padding-top: 16%;
+    }
+}
+@media (max-width: 350px) {
+    .footer-title, h1 {
+        font-size: 2.2rem;
+    }
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 305px) {
+    .footer-title, h1 {
+        font-size: 1.8rem;
+    }
+    .testimonial-text {
+        font-size: 1.5rem;
+    }
+    body {
+        padding-top: 22%;
+    }
 }
