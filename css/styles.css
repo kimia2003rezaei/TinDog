@@ -190,9 +190,6 @@ img {
     .navbar-brand {
         font-size: 1.6rem;
     }
-    body {
-        padding-top: 16%;
-    }
 }
 @media (max-width: 350px) {
     .footer-title, h1 {
